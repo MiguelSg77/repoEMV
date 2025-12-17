@@ -4,6 +4,27 @@ Este proyecto proporciona un entorno de desarrollo mínimo viable para aplicacio
 utilizando Docker Compose. El entorno incluye una aplicación Java basada en OpenJDK y una
 base de datos PostgreSQL.
 
+## Promt Óptimo para la IA (ChatGPT)
+
+Genera un archivo docker-compose.yml para un entorno de desarrollo mínimo viable en Java.
+
+El entorno debe incluir:
+- Un servicio de aplicación Java usando OpenJDK versión 17
+- Un servicio de base de datos PostgreSQL versión 15
+
+Requisitos:
+- La aplicación Java debe exponer el puerto 8080
+- PostgreSQL debe usar las variables de entorno:
+  POSTGRES_USER=admin
+  POSTGRES_PASSWORD=admin
+  POSTGRES_DB=emvdb
+- La base de datos debe usar un volumen para persistencia
+- La aplicación debe montar el código Java local en el contenedor
+- Ambos servicios deben comunicarse por red interna de Docker
+- Usar una versión estable de Docker Compose
+
+El archivo debe ser claro, bien estructurado y listo para usar.
+
 ## Requisitos previos
 
 - Docker
